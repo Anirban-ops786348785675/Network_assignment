@@ -5,8 +5,7 @@ def xor(a, b):
    
     result = []
 
-    # Traverse all bits, if bits are
-    # same, then XOR is 0, else 1
+  
     for i in range(1, len(b)):
         if a[i] == b[i]:
             result.append('0')
@@ -19,11 +18,10 @@ def xor(a, b):
 
 def mod2div(dividend, divisor):
 
-    # Number of bits to be XORed at a time.
+  
     pick = len(divisor)
 
-    # Slicing the dividend to appropriate
-    # length for particular step
+ 
     tmp = dividend[0 : pick]
 
     while pick < len(dividend):
@@ -77,7 +75,7 @@ s.connect(('127.0.0.1', port))
 
 
 input_string = input("Enter data you want to send->")
-#s.sendall(input_string)
+
 data =(''.join(format(ord(x), 'b') for x in input_string))
 print("Entered data in binary format :",data)
 key = "1001"
